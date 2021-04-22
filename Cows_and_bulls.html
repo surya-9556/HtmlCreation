@@ -55,10 +55,12 @@
         function myBull() {
             var text = document.getElementById("input").value;
             var val = document.getElementById("input").value
+            var i = 0
             if (text == "") {
                 alert("Must be a word")
             } else {
                 alert("Word is of " + val.length + " char length")
+                alert("Hint, Stats with:- " + val[i])
                 document.getElementById("input").disabled = true;
                 document.getElementById('div2').className = "show";
             }
